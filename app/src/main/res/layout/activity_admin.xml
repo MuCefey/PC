@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#202020">
+
+        <TextView
+            android:id="@+id/cart_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Управление каталогом"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Товары:"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавление нового товара"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Имя товара"/>
+
+        <EditText
+            android:id="@+id/editTextProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Описание товара"
+            android:inputType="textMultiLine"/>
+
+        <EditText
+            android:id="@+id/editTextProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Цена товара"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/editTextProductImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Ссылка на изображение"/>
+
+        <Button
+            android:id="@+id/buttonAddProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000"
+            android:layout_margin="10dp"
+            android:text="Добавить товар"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удаление товара"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextProductId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Введите ID товара"/>
+
+        <Button
+            android:id="@+id/buttonDeleteProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удалить товар"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FF0000"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Редактирование товара"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextEditProductId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Введите ID товара для редактирования"/>
+
+        <EditText
+            android:id="@+id/editTextEditProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Новое имя товара"/>
+
+        <EditText
+            android:id="@+id/editTextEditProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Новое описание товара"/>
+
+        <EditText
+            android:id="@+id/editTextEditProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Новая цена товара"/>
+
+        <EditText
+            android:id="@+id/editTextEditProductImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Новое фото товара"/>
+
+        <Button
+            android:id="@+id/buttonEditProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Редактировать товар"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FF0000"/>
+
+    </LinearLayout>
+</ScrollView>
